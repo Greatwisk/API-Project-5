@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>Star Wars API Project</title>
+</head>
+<body>
+    <div class="upper-border-wrapper">
+        <header>
+            <h1>Star Wars API Project</h1>
+           <!-- <img src="starship.jpg alt="Starship Image">-->
+        </header>
+ <nav>
+   <div class="dropdown-container">
+    <label for="characterRequestType">Character Request Type:</label>
+      <select id="characterRequestType">
+         <option value="random">Fetch Random Character</option>
+         <option value="all">Fetch All Character</option>
+         <option value="specific">Fetch Specific Character</option>
+      </select>
+
+      <input type="text" id="specificCharacterName" placeholder="Enter Character Name" style="display: none;">
+    </div>
+
+    <div class="dropdown-container">
+        <label for="starshipRequestType">Starship Request Type:</label>
+      <select id="starshipRequestType">
+        <option value="random">Fetch Random Starship</option>
+         <option value="all">Fetch All starship</option>
+         <option value="specific">Fetch Specific Starship</option>
+      </select>
+   
+    <input type="text" id="specificStarshipName" placeholder="Enter Starship Name" style="display: none;">
+    </div>
+</nav>
+ <button id="reset">Reset</button>
+</div>
+ <main>
+    <div id="content"></div>
+ </main>
+   
+</body>
+
+<footer>
+    <p>&copy; 2024 Seung Kim</p>
+</footer>
+<script src="js/index.js">
+   // Define your JavaScript code here
+   document.addEventListener('DOMContentLoaded', function() {
+            // Your JavaScript code that manipulates the DOM
+        });
+
+</script>  
+</html>

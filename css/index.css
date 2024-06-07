@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Upper Border Wrapper*/
+.upper-border-wrapper {
+    border: 20px solid rgb(117, 114, 175); /* Adjust border size and color as needed */
+    height: 25vh;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    margin-bottom: 300px;
+    background-color: var(--primary);
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 6rem;
+    color: rgb(117, 114, 175);
+    margin: 20px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 60px 0;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    padding: 10px 0;
+     flex-shrink: 0;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dropdown-label {
+    display: block;
+    margin-bottom: 20px; 
+  }
+.dropdown, .input-field {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+}
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: rgb(117, 114, 175);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    align-self: center; /* Center the button horizontally */
+    flex-shrink: 0;
+}
+
+button:hover {
+    background-color: rgb(90, 90, 150);
+}
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Add this line */
+}
+
+.dropdown-container select,
+.dropdown-container input {
+    width: 100%; /* Adjust width to fill the container */
+    padding: 12px; /* Increase padding for better spacing */
+    margin-bottom: 10px;
+    border: 20px solid var(--secondary); /* Adjust border width */
+    border-radius: 8px; /* Adjust border radius */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem; /* Increase font size */
+}
+
+.dropdown-container input {
+    display: none; /* Initially hide the input field */
+}
+
+/*Main*/
+main {
+    padding: 20px;
+}
+
+main h2, main h3, main p {
+    font-family: "Inter", sans-serif;
+    color: var(--dark);
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+main p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--primary);
+    color: rgb(117, 114, 175);
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+footer p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+/* Responsive Design */
